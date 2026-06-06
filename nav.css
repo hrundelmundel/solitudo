@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Frente;
+  src: url(FrenteH1-Regular.otf);
+}
+
+/* NAV CONTAINER */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  font-family: 'Frente', sans-serif;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #aaa;
+  transition: transform 0.2s;
+}
+
+.dropbtn {
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+/* HOVER EFFECT */
+.nav-link:hover, .dropbtn:hover {
+  transform: scale(1.25);
+}
+
+/* DROPDOWN CONTAINER */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+}
+
+/* DROPDOWN CONTENT (INITIALLY HIDDEN) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+/* LINKS INSIDE DROPDOWN */
+.dropdown-content a {
+  color: #aaa;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: 'Frente', sans-serif;
+}
+
+/* HOVER LINKS INSIDE DROPDOWN */
+.dropdown-content a:hover {
+  filter: brightness(1.05);
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+.nav-buttons {
+  gap: 30px; /* Space out the links evenly */
+  align-items: center;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  font-family: 'Frente', monospace;
+  font-size: 16px;
+  color: #999999;
+  position: relative; /* Important for dropdown positioning */
+}
+
+.ipod {
+    --black: #1a1017;
+    --dark: #5b3a53;
+    --med: #61a0a5;
+    --light: #c3e3e6;
+    --white: #ffffff;
+
+    width: 200px;
+    height: 350px;
+    border: 5px var(--med) solid;
+    padding: 20px;
+    position: relative;
+    border-radius: 25px;
+    background: var(--light);
+}
+
+audio {
+    border-radius: 25px;
+    width: 90%;
+    height: 30px;
+    background: var(--med);
+    color: white;
+    mix-blend-mode: hard-light;
+    opacity: 0.4;
+    margin: 10px auto;
+}
+
+.ipod:nth-of-type(even) {
+    background: var(--med);
+    box-shadow: 15px 15px var(--dark);
+    border-color: var(--dark);
+    margin-top: -5px;
+}
+
+.ipod:nth-of-type(even) .button .button {
+    background: var(--med);
+    border: 1px double var(--light);
+}
+
+.screen {
+    height: 55%;
+    background: var(--white);
+    border-radius: 20px;
+    overflow: scroll;
+    outline: 2px var(--white) solid;
+    outline-offset: 3px;
+    font-family: "ChicagoFLF", monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+.screen b {
+    background: var(--med);
+    color: var(--white);
+    width: 100%;
+    display: block;
+    padding: 3px 5px;
+    font-size: 0.9em;
+    margin-top: 5px;
+    border-top: 15px double var(--white);
+}
+
+.screen .caption {
+    padding: 0px 10px;
+}
+
+.button {
+    border: 1px double var(--med);
+    background: var(--white);
+    height: 40%;
+    aspect-ratio: 1 / 1;
+    margin: 10% auto;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.button .b {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: var(--black) !important;
+}
+
+.b.b-top {
+    top: 5%;
+    font-size: 0.9em;
+}
+
+.b.b-bottom {
+    bottom: 5%;
+    font-size: 0.6em;
+}
+
+.b.b-left {
+    left: 3%;
+    top: 40%;
+    width: 20%;
+}
+
+.b.b-right {
+    right: 3%;
+    top: 40%;
+    width: 20%;
+}
+
+.button .button {
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    margin: 25% auto;
+    background: var(--light);
+}
